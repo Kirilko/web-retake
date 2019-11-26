@@ -9,78 +9,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="main/style.css">
+    <script src="main/js.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img class="logo" src="source/logo.png" alt="">
                 </a>
-                <ul class="navbar-nav d-flex flex-row justify-content-end">
-                    <li class="nav-item"><a class="btn-outline-dark btn btn-sm mx-2" href="#"><b>Регистрация</b></a>
-                    </li>
-                    <li class="nav-item"><a class="btn-outline-dark btn btn-sm mr-2" href="#"><b>Войти</b></a></li>
-                </ul>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nContent"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div id="nContent" class="collapse navbar-collapse justify-content-end">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link mr-4 active"><b>Главная</b></a></li>
-                        <li class="nav-item"><a href="host.html" class="nav-link mr-4"><b>Неглавная</b></a></li>
-                    </ul>
-                </div>
             </div>
         </nav>
     </header>
     
     <main class="under-nav">
         <div class="container">
-            <div class="row justify-content-around">
-                <div class="col-md-3">
-                    <div class="card"></div>
+            <div class="card">
+                <div class="card-body">
+                        <input type="date" id="date" class="form-control">
+                        <div class="form-group mt-2">
+                                <label for="textArea">Small textarea</label>
+                                <textarea class="form-control rounded-0" id="textArea" rows="3"></textarea>
+                              </div>
+                        <div class="btn btn-primary btn-block mt-2" onclick="action1()">Добавить</div>
                 </div>
-                <div class="col-md-3">
-
-                </div>
-                <div class="col-md-3">
-
-                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="incident" id="incident">
+                
             </div>
         </div>
     </main>
-
-    <footer class="page-footer font-small bg-dark text-light">
-        <!--<div class="container p-3">
-            <div class="row justify-content-around">
-                <div class="col-lg-6 text-center text-lg-left">
-                    <h4 class="text-uppercase">footer контент</h4>
-                    <p>Здесь должен быть контент</p>
-                </div>
-                <div class="col-3">
-                    <h5>Ссылки1</h5>
-                    <ul class="list-group list-unstyled">
-                        <li><a href="#">Компания</a></li>
-                        <li><a href="#">Договор</a></li>
-                        <li><a href="#">Лицензии</a></li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <h5>Ссылки2</h5>
-                    <ul class="list-group list-unstyled">
-                        <li><a href="#">Акции</a></li>
-                        <li><a href="#">Помощь</a></li>
-                        <li><a href="#">Запас</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>-->
-        <div class="text-center container">
-            <p class="p-4">Факультет информационных технологий Московского Политеха</p>
-        </div>
-    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
